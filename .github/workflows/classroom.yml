@@ -33,7 +33,7 @@ jobs:
 
       - name: 'averageRating'
         id: averagerating
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'averageRating'
           setup-command: 'mvn -B -q compile'
@@ -43,7 +43,7 @@ jobs:
 
       - name: 'countFiveStar'
         id: countfivestar
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'countFiveStar'
           setup-command: 'mvn -B -q compile'
@@ -53,7 +53,7 @@ jobs:
 
       - name: 'topRating'
         id: toprating
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'topRating'
           setup-command: 'mvn -B -q compile'
@@ -63,7 +63,7 @@ jobs:
 
       - name: 'describeRating'
         id: describerating
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'describeRating'
           setup-command: 'mvn -B -q compile'
@@ -73,7 +73,7 @@ jobs:
 
       - name: 'containsWord'
         id: containsword
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'containsWord'
           setup-command: 'mvn -B -q compile'
@@ -83,7 +83,7 @@ jobs:
 
       - name: 'totalLength'
         id: totallength
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'totalLength'
           setup-command: 'mvn -B -q compile'
@@ -93,7 +93,7 @@ jobs:
 
       - name: 'reverseReviewOrder'
         id: reverserevieworder
-        uses: classroom-resources/autograding-command-grader@v1
+        uses: cs-plus-plus/autograding-command-grader@v1
         with:
           test-name: 'reverseReviewOrder'
           setup-command: 'mvn -B -q compile'
@@ -102,7 +102,7 @@ jobs:
           max-score: 14
 
       - name: Autograding Reporter
-        uses: classroom-resources/autograding-grading-reporter@v1
+        uses: cs-plus-plus/autograding-grading-reporter@v1
         env:
           AVERAGERATING_RESULTS: "${{steps.averagerating.outputs.result}}"
           COUNTFIVESTAR_RESULTS: "${{steps.countfivestar.outputs.result}}"
